@@ -1,0 +1,85 @@
+/*---------------------
+  Latest Blog
+-----------------------*/
+
+.latestBlog {
+	padding-top: 72px;
+	padding-bottom: 80px;
+}
+
+.latestBlog .sectionTitle {
+	margin-bottom: 55px;
+}
+
+.singleLatestBlog {
+	margin-bottom: 25px;
+}
+
+.singleLatestBlog img {
+	min-width: 100%;
+}
+
+.singleLatestBlog .latestText {
+	padding-top: 25px;
+}
+
+.singleLatestBlog .latestText .tagList {
+	margin-bottom: 8px;
+}
+
+.singleLatestBlog .latestText .tagList .tagItem {
+	font-size: 16px;
+	color: #a2a1a1;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.singleLatestBlog .latestText .tagList .tagItem i {
+	color: #e7ab3c;
+}
+
+.singleLatestBlog .latestText a {
+	display: block;
+}
+
+.singleLatestBlog .latestText a h4 {
+	color: #252525;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 16px;
+}
+
+.benefitItems {
+	border: 1px solid #ebebeb;
+	margin-top: 45px;
+}
+
+.benefitItems .singleBenefit {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	padding-left: 55px;
+	padding-right: 55px;
+	border-right: 1px solid #F3F4F0;
+}
+
+.benefitItems .singleBenefit .sbIcon {
+	float: left;
+	margin-right: 20px;
+}
+
+.benefitItems .singleBenefit .sbText {
+	display: table;
+}
+
+.benefitItems .singleBenefit .sbText h6 {
+	color: #252525;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.benefitItems .singleBenefit .sbText p {
+	margin-bottom: 0;
+	color: #252525;
+	line-height: 20px;
+}

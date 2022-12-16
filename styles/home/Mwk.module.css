@@ -1,0 +1,77 @@
+/*---------------------
+  Banner Section
+-----------------------*/
+
+.bannerSection {
+	padding: 80px 50px;
+}
+
+.singleBanner {
+	position: relative;
+	z-index: 1;
+}
+
+.singleBanner:hover::before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.singleBanner::before {
+	position: absolute;
+	left: 35px;
+	top: 30px;
+	border: 13px solid #ffffff;
+	content: "";
+	opacity: 0.3;
+	width: calc(100% - 70px);
+	height: calc(100% - 60px);
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.singleBanner img {
+	min-width: 100%;
+}
+
+.singleBanner .innerText {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+}
+
+.singleBanner .innerText h4 {
+	color: #252525;
+	font-weight: 700;
+	padding: 11px 28px;
+	background: #ffffff;
+	border-radius: 2px;
+}
+
+/* ------------------------------ Responsive Media Styles ---------------------------- */
+
+/* Medium Device: 1200px */
+
+@media only screen and (max-width: 991px) {
+	.bannerSection {
+		padding: 80px 0 50px;
+	}
+	.singleBanner {
+		margin-bottom: 30px;
+	}	
+}
