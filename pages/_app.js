@@ -5,7 +5,7 @@ import '../styles/elegant-icons.css'
 import '../styles/globals.css'
 import '../styles/header.css'
 import '../styles/footer.css'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 
 function MyApp({ Component, pageProps }) {
