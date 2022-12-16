@@ -1,0 +1,53 @@
+/*---------------------
+  Deal Of The Week
+-----------------------*/
+
+.dealOfWeek {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-left: 65px;
+	margin-right: 65px;
+	margin-bottom: 80px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.countdownTimer {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.countdownTimer .cdItem {
+	display: inline-block;
+	background: #ffffff;
+	margin-right: 35px;
+	padding: 10px 14px;
+	border-radius: 5px;
+}
+
+.countdownTimer .cdItem:last-child {
+	margin-right: 0;
+}
+
+.countdownTimer .cdItem span {
+	color: #e7ab3c;
+	font-weight: 700;
+	line-height: 40px;
+	font-size: 36px;
+}
+
+.countdownTimer .cdItem p {
+	font-size: 16px;
+	color: #b2b2b2;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 991px) {
+	.dealOfWeek {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

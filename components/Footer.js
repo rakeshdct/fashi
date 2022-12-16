@@ -64,9 +64,7 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="copyright-text">
-
-                                    Copyright &copy;2022 All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <Link href="https://colorlib.com" target="_blank">Colorlib</Link>
-
+                                    Copyright &copy;2022 All rights reserved 
                                 </div>
                                 <div className="payment-pic">
                                     <img src="img/payment-method.png" alt="" />

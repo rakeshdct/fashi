@@ -179,6 +179,9 @@
 }
 
 @media only screen and (max-width: 767px){
+	.copyright-reserved .copyright-text{
+		width: 100%;
+	}
 	.copyright-reserved .payment-pic {
 		float: none;
 		text-align: center;

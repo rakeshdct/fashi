@@ -32,7 +32,7 @@ const Header = () => {
                     <div className="row">
                         <div className="col-lg-2 col-md-2">
                             <div className="logo">
-                                <Link href="./index.html">
+                                <Link href="/">
                                     <img src="img/logo.png" alt=""/>
                                 </Link>
                             </div>
@@ -126,7 +126,7 @@ const Header = () => {
                     </div>
                     <nav className="nav-menu mobile-menu">
                         <ul>
-                            <li className="active"><Link href="./index.html">Home</Link></li>
+                            <li className="active"><Link href="/">Home</Link></li>
                             <li><Link href="./shop.html">Shop</Link></li>
                             <li><Link href="#">Collection</Link>
                                 <ul className="dropdown">
