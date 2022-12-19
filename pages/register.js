@@ -11,15 +11,15 @@ const Createaccount = () => {
                             <h2>Register</h2>
                             <form action="#">
                                 <div className={styles.groupInput}>
-                                    <label for="username">Username or email address *</label>
+                                    <label htmlFor="username">Username or email address *</label>
                                     <input type="text" id="username"/>
                                 </div>
                                 <div className={styles.groupInput}>
-                                    <label for="pass">Password *</label>
+                                    <label htmlFor="pass">Password *</label>
                                     <input type="text" id="pass"/>
                                 </div>
                                 <div className={styles.groupInput}>
-                                    <label for="con-pass">Confirm Password *</label>
+                                    <label htmlFor="con-pass">Confirm Password *</label>
                                     <input type="text" id="con-pass"/>
                                 </div>
                                 <button type="submit" className={[styles.loginBtn, styles.siteBtn].join(" ")}>REGISTER</button>

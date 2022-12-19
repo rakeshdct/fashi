@@ -322,3 +322,33 @@
 	padding-top: 10px;
 	margin-bottom: 45px;
 }
+@media only screen and (max-width: 767px){
+	.blogDetailsInner .postedBy {
+		padding: 40px 25px;
+		text-align: center;
+	}	
+	.blogDetailsInner .tagShare .blogShare .socialLinks a {
+		margin-left: 15px;
+	}
+}
+@media only screen and (max-width: 479px){
+	.blogDetailsInner .blogDetailTitle p:before {
+		left: -62px;
+		width: 50px;
+	}
+	.blogDetailsInner .blogDetailTitle	 p:after {
+		right: -62px;
+		width: 50px;
+	}	
+	.blogDetailsInner .blogPost .nextBlog .nbPic i {
+		display: none;
+	}	
+	.blogDetailsInner .postedBy .pbPic {
+		float: none;
+		margin-bottom: 15px;
+	}	
+	.blogDetailsInner .postedBy .pbText {
+		padding-left: 0;
+		display: block;
+	}	
+}

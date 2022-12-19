@@ -542,7 +542,9 @@
 	padding: 13px 20px 12px 30px;
 	text-transform: capitalize;
 }
-
+#mobile-menu-wrap{
+	display:none;
+}	
 /* ------------------------------ Responsive Media Styles ---------------------------- */
 
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {

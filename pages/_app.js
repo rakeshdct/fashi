@@ -4,6 +4,7 @@ import '../styles/themify-icons.css'
 import '../styles/elegant-icons.css'
 import '../styles/globals.css'
 import '../styles/header.css'
+import '../styles/slicknav.min.css'
 import '../styles/footer.css'
 import Layout from '../components/Layout'
 

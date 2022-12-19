@@ -11,16 +11,16 @@ const Login = () => {
                             <h2>Login</h2>
                             <form action="#">
                                 <div className={styles.groupInput}>
-                                    <label for="username">Username or email address *</label>
+                                    <label htmlFor="username">Username or email address *</label>
                                     <input type="text" id="username"/>
                                 </div>
                                 <div className={styles.groupInput}>
-                                    <label for="pass">Password *</label>
+                                    <label htmlFor="pass">Password *</label>
                                     <input type="text" id="pass"/>
                                 </div>
                                 <div className={[styles.groupInput,styles.giCheck].join(" ")}>
                                     <div className={styles.giMore}>
-                                        <label for="save-pass">
+                                        <label htmlFor="save-pass">
                                             Save Password
                                             <input type="checkbox" id="save-pass"/>
                                                 <span className={styles.checkmark}></span>

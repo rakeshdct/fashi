@@ -11,7 +11,7 @@ const Resetpassword = () => {
                             <h2>Reset Password</h2>
                             <form action="#">
                                 <div className={styles.groupInput}>
-                                    <label for="username">Username or email address *</label>
+                                    <label htmlFor="username">Username or email address *</label>
                                     <input type="text" id="username" />
                                 </div>
                                 <button type="submit" className={[styles.loginBtn, styles.siteBtn].join(" ")}>Reset Password</button>

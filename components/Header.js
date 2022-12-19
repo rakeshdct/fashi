@@ -1,7 +1,16 @@
 import React from 'react'
 import Link from "next/link";
+import { useState } from 'react';
 
 const Header = () => {
+    const [showMeNav, setShowMeNav] = useState(false);
+    function toggleNav(){
+      setShowMeNav(!showMeNav);
+    }   
+    const [showMeSubNav, setShowMeSubNav] = useState(false);
+    function toggleSubNav(){
+      setShowMeSubNav(!showMeSubNav);
+    }       
     return (
         <header className="header-section">
             <div className="header-top">
@@ -9,7 +18,7 @@ const Header = () => {
                     <div className="ht-left">
                         <div className="mail-service">
                             <i className=" fa fa-envelope"></i>
-                            <Link href="#">hello.colorlib@gmail.com</Link>                           
+                            <Link href="#">hello.colorlib@gmail.com</Link>
                         </div>
                         <div className="phone-service">
                             <i className=" fa fa-phone"></i>
@@ -33,7 +42,7 @@ const Header = () => {
                         <div className="col-lg-2 col-md-2">
                             <div className="logo">
                                 <Link href="/">
-                                    <img src="img/logo.png" alt=""/>
+                                    <img src="img/logo.png" alt="" />
                                 </Link>
                             </div>
                         </div>
@@ -41,8 +50,8 @@ const Header = () => {
                             <div className="advanced-search">
                                 <button type="button" className="category-btn">All Categories</button>
                                 <div className="input-group">
-                                    <input type="text" placeholder="What do you need?"/>
-                                        <button type="button"><i className="ti-search"></i></button>
+                                    <input type="text" placeholder="What do you need?" />
+                                    <button type="button"><i className="ti-search"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +73,7 @@ const Header = () => {
                                             <table>
                                                 <tbody>
                                                     <tr>
-                                                        <td className="si-pic"><img src="img/select-product-1.jpg" alt=""/></td>
+                                                        <td className="si-pic"><img src="img/select-product-1.jpg" alt="" /></td>
                                                         <td className="si-text">
                                                             <div className="product-selected">
                                                                 <p>$60.00 x 1</p>
@@ -76,7 +85,7 @@ const Header = () => {
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="si-pic"><img src="img/select-product-2.jpg" alt=""/></td>
+                                                        <td className="si-pic"><img src="img/select-product-2.jpg" alt="" /></td>
                                                         <td className="si-text">
                                                             <div className="product-selected">
                                                                 <p>$60.00 x 1</p>
@@ -128,13 +137,6 @@ const Header = () => {
                         <ul>
                             <li className="active"><Link href="/">Home</Link></li>
                             <li><Link href="./shop">Shop</Link></li>
-                            <li><Link href="#">Collection</Link>
-                                <ul className="dropdown">
-                                    <li><Link href="#">Men's</Link></li>
-                                    <li><Link href="#">Women's</Link></li>
-                                    <li><Link href="#">Kid's</Link></li>
-                                </ul>
-                            </li>
                             <li><Link href="./blog">Blog</Link></li>
                             <li><Link href="./contact">Contact</Link></li>
                             <li><Link href="#">Pages</Link>
@@ -149,7 +151,40 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
-                    <div id="mobile-menu-wrap"></div>
+                    <div id="mobile-menu-wrap">
+                        <div className="slicknav_menu">
+                            <a className="slicknav_btn slicknav_open" onClick={toggleNav}>
+                                <span className="slicknav_menutxt">MENU</span>
+                                <span className="slicknav_icon">
+                                    <span className="slicknav_icon-bar"></span>
+                                    <span className="slicknav_icon-bar"></span>
+                                    <span className="slicknav_icon-bar"></span>
+                                </span>
+                            </a>
+                            <nav className="slicknav_nav" aria-hidden="false" role="menu" style={{ display: showMeNav ? "block" : "none" }} >                                
+                            <ul>
+                                <li><a href="./" role="menuitem">Home</a></li>
+                                <li><a href="./shop" role="menuitem">Shop</a></li>
+                                <li><a href="./blog" role="menuitem">Blog</a></li>
+                                <li><a href="./contact" role="menuitem">Contact</a></li>
+                                <li className="slicknav_collapsed slicknav_parent">
+                                    <a className="slicknav_item slicknav_row" onClick={toggleSubNav}>
+                                        Pages
+                                        <span className="slicknav_arrow">►</span>
+                                    </a>
+                                    <ul className="dropdown slicknav_hidden" role="menu"  style={{ display: showMeSubNav ? "block" : "none" }}>
+                                        <li><a href="./blog-details" >Blog Details</a></li>
+                                        <li><a href="./shopping-cart" >Shopping Cart</a></li>
+                                        <li><a href="./check-out" >Checkout</a></li>
+                                        <li><a href="./faq" >Faq</a></li>
+                                        <li><a href="./register" >Register</a></li>
+                                        <li><a href="./login" >Login</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
