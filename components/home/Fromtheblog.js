@@ -26,7 +26,7 @@ const Fromtheblog = () => {
                                         <i className="fa fa-comment-o" />&nbsp;5
                                     </div>
                                 </div>
-                                <Link href="#">
+                                <Link href="./blog-details">
                                     <h4>The Best Street Style From London Fashion Week</h4>
                                 </Link>
                                 <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
@@ -45,7 +45,7 @@ const Fromtheblog = () => {
                                         <i className="fa fa-comment-o" />&nbsp;5
                                     </div>
                                 </div>
-                                <Link href="#">
+                                <Link href="./blog-details">
                                     <h4>Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes</h4>
                                 </Link>
                                 <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
@@ -64,7 +64,7 @@ const Fromtheblog = () => {
                                         <i className="fa fa-comment-o" />&nbsp;5
                                     </div>
                                 </div>
-                                <Link href="#">
+                                <Link href="./blog-details">
                                     <h4>How To Brighten Your Wardrobe With A Dash Of Lime</h4>
                                 </Link>
                                 <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>

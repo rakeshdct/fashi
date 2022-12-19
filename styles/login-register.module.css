@@ -1,0 +1,147 @@
+/*---------------------
+  Register Form
+-----------------------*/
+
+.registerLoginSection {
+	padding-top: 72px;
+	padding-bottom: 80px;
+}
+
+.registerForm h2,
+.loginForm h2 {
+	color: #252525;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.registerForm form .groupInput,
+.loginForm form .groupInput {
+	margin-bottom: 25px;
+}
+
+.registerForm form .groupInput label,
+.loginForm form .groupInput label {
+	display: block;
+	font-size: 18px;
+	color: #252525;
+	margin-bottom: 13px;
+}
+
+.registerForm form .groupInput input,
+.loginForm form .groupInput input {
+	border: 1px solid #ebebeb;
+	height: 50px;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+.registerForm form .registerBtn,
+.registerForm form .loginBtn,
+.loginForm form .registerBtn,
+.loginForm form .loginBtn {
+	width: 100%;
+	letter-spacing: 2px;
+	margin-top: 5px;
+}
+
+.registerForm .switchLogin,
+.loginForm .switchLogin {
+	text-align: center;
+	margin-top: 22px;
+}
+
+.registerForm .switchLogin .orLogin,
+.loginForm .switchLogin .orLogin {
+	color: #252525;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.registerForm .switchLogin .orLogin:before,
+.loginForm .switchLogin .orLogin:before {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: #9f9f9f;
+	content: "";
+}
+
+.loginForm .groupInput.giCheck {
+	margin-bottom: 8px;
+}
+
+.loginForm .groupInput .giMore {
+	overflow: hidden;
+}
+
+.loginForm .groupInput .giMore label {
+	position: relative;
+	cursor: pointer;
+	padding-left: 28px;
+	font-size: 14px;
+	color: #6B6B6B;
+	float: left;
+}
+
+.loginForm .groupInput .giMore label input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.loginForm .groupInput .giMore label input:checked~span {
+	border-color: #6C6C6C;
+}
+
+.loginForm .groupInput .giMore label input:checked~span:after {
+	border-color: #6c6c6c;
+}
+
+.loginForm .groupInput .giMore label .checkmark {
+	position: absolute;
+	left: 0;
+	top: 4px;
+	height: 13px;
+	width: 13px;
+	border: 1px solid #6C6C6C;
+	border-radius: 2px;
+}
+.checkmark:after {
+	position: absolute;
+	content: "";
+}
+.loginForm .groupInput .giMore label .checkmark:after {
+	left: 2px;
+	top: -2px;
+	width: 13px;
+	height: 6px;
+	border: solid #ffffff;
+	border-width: 2px 2px 0px 0px;
+	-webkit-transform: rotate(127deg);
+	-ms-transform: rotate(127deg);
+	transform: rotate(127deg);
+}
+
+.loginForm .groupInput .giMore .forgetPass {
+	float: right;
+	line-height: 20px;
+	margin-top: -2px;
+	font-size: 14px;
+	color: #6B6B6B;
+}
+
+.siteBtn {
+	color: #ffffff;
+	background: #e7ab3c;
+	border: 1px solid #e7ab3c;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 13px 45px 11px;
+	cursor: pointer;
+}

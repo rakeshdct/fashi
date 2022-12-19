@@ -17,7 +17,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="ht-right">
-                        <Link href="#" className="login-panel"><i className="fa fa-user"></i>Login</Link>
+                        <Link href="./login" className="login-panel"><i className="fa fa-user"></i>Login</Link>
                         <div className="top-social">
                             <Link href="#"><i className="ti-facebook"></i></Link>
                             <Link href="#"><i className="ti-twitter-alt"></i></Link>
@@ -127,7 +127,7 @@ const Header = () => {
                     <nav className="nav-menu mobile-menu">
                         <ul>
                             <li className="active"><Link href="/">Home</Link></li>
-                            <li><Link href="./shop.html">Shop</Link></li>
+                            <li><Link href="./shop">Shop</Link></li>
                             <li><Link href="#">Collection</Link>
                                 <ul className="dropdown">
                                     <li><Link href="#">Men's</Link></li>
@@ -135,16 +135,16 @@ const Header = () => {
                                     <li><Link href="#">Kid's</Link></li>
                                 </ul>
                             </li>
-                            <li><Link href="./blog.html">Blog</Link></li>
-                            <li><Link href="./contact.html">Contact</Link></li>
+                            <li><Link href="./blog">Blog</Link></li>
+                            <li><Link href="./contact">Contact</Link></li>
                             <li><Link href="#">Pages</Link>
                                 <ul className="dropdown">
-                                    <li><Link href="./blog-details.html">Blog Details</Link></li>
-                                    <li><Link href="./shopping-cart.html">Shopping Cart</Link></li>
-                                    <li><Link href="./check-out.html">Checkout</Link></li>
-                                    <li><Link href="./faq.html">Faq</Link></li>
-                                    <li><Link href="./register.html">Register</Link></li>
-                                    <li><Link href="./login.html">Login</Link></li>
+                                    <li><Link href="./blog-details">Blog Details</Link></li>
+                                    <li><Link href="./shopping-cart">Shopping Cart</Link></li>
+                                    <li><Link href="./check-out">Checkout</Link></li>
+                                    <li><Link href="./faq">Faq</Link></li>
+                                    <li><Link href="./register">Register</Link></li>
+                                    <li><Link href="./login">Login</Link></li>
                                 </ul>
                             </li>
                         </ul>
